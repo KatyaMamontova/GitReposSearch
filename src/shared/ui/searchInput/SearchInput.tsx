@@ -1,9 +1,13 @@
-import { TextField } from '@mui/material'
-import { InputProps } from '@mui/material';
+import { TextField, InputProps } from '@mui/material'
+import style from "./SearchInput.module.sass"
 
 const SearchInput = (props: InputProps) => {
     return (
-        <TextField></TextField>
+        <TextField
+            // id="outlined-size-small"
+            size="small"
+            variant="filled"
+            className={style.input} />
     )
 }
 
